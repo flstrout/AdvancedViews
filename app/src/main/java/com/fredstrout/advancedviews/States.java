@@ -1,14 +1,15 @@
 package com.fredstrout.advancedviews;
 
-
-public class State {
+public class States {
 
     private String sName;
     private String sCapital;
+    private String sAbbreviation;
 
-    public State (String _name, String _capital) {
+    public States (String _name, String _capital, String _abbrev) {
         sName = _name;
         sCapital = _capital;
+        sAbbreviation = _abbrev;
     }
 
     public String getName() {
@@ -17,6 +18,14 @@ public class State {
 
     public String getCapital () {
         return sCapital;
+    }
+
+    public String getsAbbreviation() {
+        return sAbbreviation;
+    }
+
+    public  String toString() {
+        return sName;
     }
 
 }
